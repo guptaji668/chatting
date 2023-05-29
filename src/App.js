@@ -1,24 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import ChatBox from './component/ChatBox';
+import Chat from './component/Chating';
+import Message from './component/Message';
+// import Emoji from './component/EmojiPicker';
+import {BrowserRouter as Router,Routes,Route} from "react-router-dom"
+
+
+
 
 function App() {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route element={<ChatBox/>} path='login'/>
+        <Route element={<Chat/>} path='chating'/>
+        <Route element={<Message/>} path='message'/>
+        {/* <Route element={<Emoji/>} path='emoji'/> */}
+
+
+      </Routes>
+    </Router>
+    
   );
 }
 

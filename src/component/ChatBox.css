@@ -1,0 +1,61 @@
+
+.mainContainer{
+    width:100vw;
+    height: 100vh;
+    background: rgb(5, 5, 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}.secondContainer{
+    width:50%;
+    height:60%;
+    /* border: 2px solid black;  */
+    background:rgb(12, 12, 12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+}
+.secondContainer>img{
+    width:5vmax;
+    margin-top: 10px;
+}
+.secondContainer>h1{
+    color: white;
+    font-size: 2vmax;
+    width:25vmax;
+    font-family:"Roboto";
+    border-bottom: 0.2vmax solid white;
+    text-align: center;
+    padding: 1vmax;
+}
+#textInput{
+width:25vmax;
+padding: 1.5vmax;
+border:none;
+outline: none;
+font-size: 1.2vmax;
+margin: 2vmax;
+box-sizing: border-box;
+
+}
+.textbtn{
+    width:25vmax;
+padding: 1.5vmax;
+border:none;
+outline: none;
+font-size: 1.2vmax;
+font-family: 'Roboto';
+color:white;
+background-color:rgb(187, 48, 48);
+box-sizing: border-box;
+transition: all 0.3s;
+cursor: pointer;
+
+}
+.textbtn:hover{
+    background-color: blue;
+
+}
