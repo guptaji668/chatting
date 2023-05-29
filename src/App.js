@@ -12,16 +12,19 @@ import {BrowserRouter as Router,Routes,Route} from "react-router-dom"
 function App() {
  
   return (
-    <Router>
-      <Routes>
-        <Route element={<ChatBox/>} path='login'/>
-        <Route element={<Chat/>} path='chating'/>
-        <Route element={<Message/>} path='message'/>
-        {/* <Route element={<Emoji/>} path='emoji'/> */}
+//     <Router>
+//       <Routes>
+//         <Route element={<ChatBox/>} path='login'/>
+//         <Route element={<Chat/>} path='chating'/>
+//         <Route element={<Message/>} path='message'/>
+//         {/* <Route element={<Emoji/>} path='emoji'/> */}
 
 
-      </Routes>
-    </Router>
+//       </Routes>
+//     </Router>
+      <div>
+         <ChatBox/>
+         <div>
     
   );
 }
